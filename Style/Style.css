@@ -226,15 +226,28 @@ nav a:hover {
 }
 
 /*Image SlideShow*/
-.slideshow-container {
-    max-width: 600px;
-    position: relative;
-    margin: auto;
+/* Centered Container */
+/* Centered Container */
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh; /* Adjusted height */
+    margin-bottom: 2rem;
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden; /* Hide overflowing content */
   }
-
-  .slideshow-container img {
-    width: 100%;
+  
+  .centered-container img {
+    max-width: 100%;
     height: auto;
+    border-radius: 20px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
+  .centered-container img:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
   }
 
   .prev, .next {

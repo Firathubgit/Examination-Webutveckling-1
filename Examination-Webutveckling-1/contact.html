@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your website description goes here">
+  <link rel="stylesheet" href="Style/Style.css">
+  <title>Min fina Sida</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Contact us</h1>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="side-nav">
+      <div class="user">
+        <img src="Images/user.png" class="user-img" alt="User Image">
+        <div>
+          <h2>Thomas Daniel</h2>
+          <p>Thomas@Kahba.com</p>
+        </div>
+        <img src="Images/star.png" class="star-img" alt="Star Image">
+      </div>
+      <ul>
+        <li><img src="Images/dashboard.png" alt=""><a href="index.html">Home</a></li>
+        <li><img src="Images/reports.png" alt=""><a href="contact.html">Contact</a></li>
+        <li><img src="Images/rewards.png" alt=""><a href="about.html">About</a></li>
+        <li><img src="Images/messages.png" alt=""><a href="products.html">Product</a></li>
+        <li><img src="Images/video-chat.png" alt=""><a href="drawing.html">Drawing</a></li>
+        <li><img src="Images/projects.png" alt=""><a href="#">Extra</a></li>
+        <li><img src="Images/members.png" alt=""><a href="#">Extra</a></li>
+        <li><img src="Images/setting.png" alt=""><a href="#">Extra</a></li>
+      </ul>
+    </div>
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar-button">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+      </svg>
+    </label>
+    <label id="overlay" for="sidebar-active"></label>
+    <div class="links-container">
+      <label for="sidebar-active" class="close-sidebar-button"></label>
+      <a class="home-link" href="index.html">Home</a>
+      <a href="#">Contact</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Product</a>
+      <a href="drawing.html">Drawing</a>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section>
+      <h2 class="section-heading-text-title">Stay in Touch, Reach Out and Connect</h2>
+      <form action="mailto:firstname.lastname@mymail.eu" method="post" enctype="text/plain">
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label for="firstname">First Name:</label>
+          <input type="text" id="firstname" name="firstname" required>
+
+          <label for="lastname">Last Name:</label>
+          <input type="text" id="lastname" name="lastname" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Information</legend>
+          <label>Interested in our services:</label>
+          <input class="formTexts" type="checkbox" id="service1" name="services[]" value="Service 1">
+          <label for="service1">Service 1</label>
+          <input type="checkbox" id="service2" name="services[]" value="Service 2">
+          <label for="service2">Service 2</label>
+
+          <label>Preferred Contact Method:</label>
+          <input class="formTexts" type="radio" id="email" name="contactMethod" value="Email">
+          <label for="email">Email</label>
+          <input class="formTexts" type="radio" id="phone" name="contactMethod" value="Phone">
+          <label for="phone">Phone</label>
+        </fieldset>
+
+        <label for="department">Department:</label>
+        <select id="department" name="department">
+          <option value="Sales">Firat's sales department</option>
+          <option value="Support">Firat's support department</option>
+          <option value="General Inquiry">Firat's mobil</option>
+          <option value="Other">Firat's ipad</option>
+        </select>
+
+        <input class="button buttonBlack" type="submit" value="Submit">
+        <input class="button buttonBlack" type="reset" value="Reset">
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Phone: 0763032964</p>
+    <p>Kungens kurva 141 75 Huddinge</p>
+    <a href="https://www.instagram.com/" target="_blank">
+      <img src="Images/2227-removebg-preview.png" width="100" height="100" alt="Instagram Icon">
+    </a>
+  </footer>
+</body>
+
+</html>

@@ -8,6 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="Style/Style.css">
   <title>Min fina Sida</title>
+  <script src="script.js" defer></script> <!-- Ensure this is in the head or at the end of the body -->
 </head>
 
 <body>
@@ -59,37 +60,53 @@
   <!-- SECTION -->
   <section>
     <h2 class="section-heading-text-title">Home sweet Home</h2>
+
     <article>
-      <h3>First Article</h3>
+      <h3>Revamp Your Style</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget orci non tellus convallis lacinia vel ac
-        nisl.
+        Revamp your appearance with our top-notch coloring treatments. <br> Cover grays, add dimension with highlights,
+        or experiment with a new color - our barbers are here for you
       </p>
-      <img src="Images/nedladdning.jpg" width="600" height="300"
-        srcset="Images/nedladdning.jpg 285w, Images/nedladdning(1).jpg 359w, Images/nedladdning(2).jpg 485w"
-        sizes="(max-width: 400px) 300px, 600px" alt="Local Image">
+      <div class="centered-container">
+        <img name="slide" width="300" height="700" alt="Slideshow Image" class="Slideshow-img" />
+      </div>
+    </article>
+    <article>
+      <h3>Your Style, Our Passion</h3>
+      <p>
+        Experience the finest cuts and shaves in a classic atmosphere.
+      </p>
+      <img src="Images/HaircuttingImage1.jpg" width="600" height="300"
+        srcset="Images/HaircuttingImage1.jpg 285w, Images/HaircuttingImage2.jpg 359w, Images/HaircuttingImage3.jpg 485w"
+        sizes="(max-width: 400px) 300px, 600px" alt="Local Image" class="article-img">
     </article>
 
     <article>
-      <h3>Second Article</h3>
+      <h3>Only the best</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget orci non tellus convallis lacinia vel ac
-        nisl.
+        Our haircuts are tailored to suit your unique style and personality. From traditional cuts to the latest trends,
+        <br> our barbers will work with you to achieve the look you desire.
       </p>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwpO3Zdx1sawJwm9ywlHgmDKzUr7azMXhF7A&usqp=CAU"
-        width="500" height="200" alt="External Image">
+      <img src="Images/secondHairCuttingImage1.jpg" width="600" height="300"
+        srcset="Images/secondHairCuttingImage1.jpg 285w, Images/secondHairCuttingImage2.jpg 359w, Images/secondHairCuttingImage3.jpg 485w"
+        sizes="(max-width: 400px) 300px, 600px" alt="Local Image" class="article-img">
     </article>
 
     <article>
-      <h3>Third Article</h3>
-      <video width="500" height="500" controls autoplay muted>
-        <source src="Videos/pexels-edtor-ㅤ-13781451 (1440p).mp4" type="video/mp4">
+      <h3>Elivate yourself</h3>
+      <p>
+        Transform your hair with our premium coloring services. Whether you want to cover grays, <br> add highlights, or
+        try a bold new color, our barbers are here to help you achieve your desired look.
+      </p>
+      <video controls width="150" height="300" class="article-video" controls autoplay muted>
+        <source src="Videos/HairCuttingVideo1.mp4" type="video/mp4"
+          srcset="Videos/HairCuttingVideo1.mp4 285w, Videos/HairCuttingVideo2.mp4 359w, Videos/HairCuttingVideo3.mp4 485w"
+          sizes="(max-width: 400px) 300px, 600px">
       </video>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget orci non tellus convallis lacinia vel ac
-        nisl.
-      </p>
     </article>
+
+
+
   </section>
 
   <!-- FOOTER -->

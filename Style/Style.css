@@ -262,6 +262,32 @@ article p {
     color: var(--secondText-colour);
 }
 
+.article-img {
+    border-radius: 20px;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.article-img:hover {
+    transform: scale(1.01);
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Adjust height as needed */
+}
+
+.slideshow-img {
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.slideshow-img:hover {
+    transform: scale(1.01);
+}
+
+
 /* Videostil */
 video {
     width: 100%;

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Your website description goes here">
   <link rel="stylesheet" href="Style/Style.css">
-  <title>Min fina Sida</title>
+  <title>Urban Barber Studio</title>
 </head>
 
 <body>
@@ -59,7 +59,7 @@
   <main>
     <section>
       <h2 class="section-heading-text-title">Stay in Touch, Reach Out and Connect</h2>
-      <form action="mailto:firstname.lastname@mymail.eu" method="post" enctype="text/plain">
+      <form id="contact-form">
         <fieldset>
           <legend>Contact Information</legend>
           <label for="firstname">First Name:</label>
@@ -109,6 +109,33 @@
       <img src="Images/2227-removebg-preview.png" width="100" height="100" alt="Instagram Icon">
     </a>
   </footer>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const formData = new FormData(this);
+
+      fetch('/sendmail', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Något gick fel.');
+        }
+        return response.text();
+      })
+      .then(data => {
+        console.log(data); // Skriv ut serverns svar
+        alert('Tack för ditt meddelande!');
+      })
+      .catch(error => {
+        console.error('Fel:', error);
+        alert('Något gick fel. Försök igen senare.');
+      });
+    });
+  </script>
 </body>
 
 </html>

@@ -57,8 +57,13 @@
 
 /* Section heading text title inside the sidebar */
 .section-heading-text-title {
-    text-align: center; /* Center-align text */
-    margin: auto; /* Center element horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 1s ease-out forwards;
 }
 
 /* Links inside the sidebar */
@@ -417,6 +422,12 @@ footer a:hover {
 }
 
 /* Media queries for different screen sizes */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* Large screens */
 @media (min-width: 1025px) {
@@ -561,6 +572,7 @@ footer a:hover {
         color: rgb(72, 72, 72); /* Text color on hover */
         border: 2px solid black; /* Border on hover */
     }
+    
 
     @keyframes BackgroundAnimIphone {
         from {
@@ -569,5 +581,6 @@ footer a:hover {
         to {
             background-color: rgb(61, 61, 61); /* End color */
         }
+        
     }
 }
